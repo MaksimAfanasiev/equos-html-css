@@ -14,6 +14,9 @@ main colors:
 theme-color: rgba(247, 247, 247, 1);
 secondary color: rgba(30, 30, 30, 1);
 */
+:root{
+    --main-theme-color:
+}
 
 body{
     font-family: Raleway, sans-serif;
@@ -31,6 +34,7 @@ a{
 }
 
 /* Header */
+
 .nav-list{
     font-size: 16px;
     font-weight: 500;
@@ -49,9 +53,15 @@ a{
 }
 
 /* Hero */
+
+.hero{
+    background-color: rgba(30, 30, 30, 1);
+}
+
 .hero-title{
+    color: rgba(255, 255, 255, 1);
     font-size: 64px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.18;
     text-align: left;
     text-transform: capitalize;
@@ -59,8 +69,161 @@ a{
 
 .title-accent{
     font-weight: 700;
-    
+    display: inline-block;
 }
-.hero-title .title-accent::first-letter{
+
+.title-accent::first-letter{
     text-transform: lowercase;
+}
+
+.hero-text{
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.17;
+}
+
+.hero-button{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Why us */
+
+.features-title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;;
+}
+
+.features-definition{
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.features-description{
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+}
+
+.feature-title{
+    color: rgba(76, 76, 76, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.feture-indicator{
+    font-size: 48px;
+    line-height: 1.17;
+}
+
+.money-indicator{
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.indicator-description{
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Fields of activity */
+
+.activities-title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.activity-list {
+    color: rgba(217, 217, 217, 1);
+    background-color: #1E1E1E;
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.activity{
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.activity-link{
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Our services */
+
+.services{
+    background-color: rgba(247, 247, 247, 1);
+}
+
+.services-title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.services-title > .title-accent::first-letter{
+    text-transform: uppercase;
+}
+
+.service-list{
+    color: rgba(76, 76, 76, 1);
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.service{
+    color: rgba(0, 0, 0, 1);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.service-link {
+    background-color: rgba(0, 0, 0, 1);;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.service-item.black{
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(217, 217, 217, 1);
+}
+
+.service.black{
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.service-link.black{
+    background-color: rgba(255, 255, 255, 1);
+    color:  rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
