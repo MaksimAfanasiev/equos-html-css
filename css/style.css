@@ -8,14 +8,10 @@ primary white: rgba(255, 255, 255, 1)
 primary black: rgba(0, 0, 0, 1)
 secondary white: rgba(217, 217, 217, 1)
 secondary black: rgba(76, 76, 76, 1)
-
-main colors:
-
-theme-color: rgba(247, 247, 247, 1);
-secondary color: rgba(30, 30, 30, 1);
 */
 :root{
-    --main-theme-color:
+    --white-theme-color: rgba(255, 255, 255, 1);
+    --black-theme-color: rgba(30, 30, 30, 1);
 }
 
 body{
@@ -33,6 +29,15 @@ a{
     color: inherit;
 }
 
+.title-accent {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.title-accent::first-letter {
+    text-transform: lowercase;
+}
+
 /* Header */
 
 .nav-list{
@@ -43,37 +48,27 @@ a{
 }
 
 .nav-button{
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-theme-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
-
-    background-color: rgba(0, 0, 0, 1);;
+    background-color: var(--black-theme-color);
 }
 
 /* Hero */
 
 .hero{
-    background-color: rgba(30, 30, 30, 1);
+    background-color: var(--black-theme-color);
 }
 
 .hero-title{
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-theme-color);
     font-size: 64px;
     font-weight: 400;
     line-height: 1.18;
     text-align: left;
     text-transform: capitalize;
-}
-
-.title-accent{
-    font-weight: 700;
-    display: inline-block;
-}
-
-.title-accent::first-letter{
-    text-transform: lowercase;
 }
 
 .hero-text{
@@ -88,7 +83,7 @@ a{
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white-theme-color);
 }
 
 /* Why us */
@@ -148,13 +143,13 @@ a{
 
 .activity-list {
     color: rgba(217, 217, 217, 1);
-    background-color: #1E1E1E;
+    background-color: var(--black-theme-color);
     font-size: 18px;
     line-height: 1.17;
 }
 
 .activity{
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-theme-color);
     font-size: 36px;
     font-weight: 400;
 }
@@ -165,7 +160,7 @@ a{
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white-theme-color);
 }
 
 /* Our services */
@@ -199,8 +194,8 @@ a{
 }
 
 .service-link {
-    background-color: rgba(0, 0, 0, 1);;
-    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+    color: var(--white-theme-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
@@ -208,22 +203,121 @@ a{
 }
 
 .service-item.black{
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--black-theme-color);
     color: rgba(217, 217, 217, 1);
 }
 
 .service.black{
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-theme-color);
     font-size: 36px;
     font-weight: 400;
     line-height: 1.17;
 }
 
 .service-link.black{
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white-theme-color);
     color:  rgba(0, 0, 0, 1);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
+}
+
+.news-title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.news-title .title-accent::first-letter{
+    text-transform: uppercase;
+}
+
+.news-headline{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.news-sign{
+    color: rgba(76, 76, 76, 1);
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.news-preview{
+    color: rgba(76, 76, 76, 1);
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.news-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+/* Join us */
+.join-section{
+    background-color: var(--black-theme-color);
+}
+
+.join-title{
+    color: var(--white-theme-color);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.join-title .title-accent::first-letter{
+    text-transform: uppercase;
+}
+
+.join-call{
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.join-button{
+    background-color: var(--white-theme-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--black-theme-color);
+}
+
+.footer-nav-list{
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.adress-list{
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.copyrights{
+    color: rgba(217, 217, 217, 1);
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
 }
