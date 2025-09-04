@@ -1,7 +1,6 @@
 /* 
 main font-family:  Raleway
 
-
 text colors:
 
 primary white: rgba(255, 255, 255, 1)
@@ -9,9 +8,16 @@ primary black: rgba(0, 0, 0, 1)
 secondary white: rgba(217, 217, 217, 1)
 secondary black: rgba(76, 76, 76, 1)
 */
-:root{
+
+:root {
     --white-theme-color: rgba(255, 255, 255, 1);
     --black-theme-color: rgba(30, 30, 30, 1);
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
 }
 
 body{
@@ -22,11 +28,26 @@ body{
 
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a{
     text-decoration: none;
     color: inherit;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 22px 0;
 }
 
 .title-accent {
@@ -48,21 +69,36 @@ a{
 }
 
 .nav-button{
+    display: inline-block;
+    padding: 14px 32px;
+    min-width: 175px;
+    border-radius: 4px;
+
     color: var(--white-theme-color);
+    background-color: var(--black-theme-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
-    background-color: var(--black-theme-color);
 }
 
 /* Hero */
 
 .hero{
+    padding: 150px 0;
+    margin-bottom: 143px;
+
     background-color: var(--black-theme-color);
 }
 
+/* .hero > .container{
+    max-width: 560px;
+} */
+
 .hero-title{
+    margin-bottom: 26px;
+    /* max-width: 560px; */
+
     color: var(--white-theme-color);
     font-size: 64px;
     font-weight: 400;
@@ -72,6 +108,10 @@ a{
 }
 
 .hero-text{
+    margin-bottom: 46px;
+    padding-right: 15px;
+    /* max-width: 545px; */
+
     color: rgba(217, 217, 217, 1);
     font-size: 18px;
     font-weight: 500;
@@ -79,6 +119,11 @@ a{
 }
 
 .hero-button{
+    display: inline-block;
+    padding: 14px 32px;
+    min-width: 275px;
+    border-radius: 4px;
+
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
@@ -88,13 +133,21 @@ a{
 
 /* Why us */
 
+.features{
+    margin-bottom: 143px;
+}
+
 .features-title{
+    margin-bottom: 28px;
+
     font-size: 48px;
     font-weight: 400;
     line-height: 1.17;;
 }
 
 .features-definition{
+    margin-bottom: 16px;
+
     color: rgba(76, 76, 76, 1);
     font-size: 16px;
     font-weight: 700;
@@ -108,7 +161,17 @@ a{
     line-height: 1.19;
 }
 
+.text-box{
+    max-width: 500px;
+}
+
+.feature-item:not(:last-child){
+    margin-bottom: 56px;
+}
+
 .feature-title{
+    margin-bottom: 20px;
+
     color: rgba(76, 76, 76, 1);
     font-size: 12px;
     font-weight: 400;
@@ -117,6 +180,8 @@ a{
 }
 
 .feture-indicator{
+    margin-bottom: 12px;
+
     font-size: 48px;
     line-height: 1.17;
 }
@@ -134,7 +199,11 @@ a{
 
 /* Fields of activity */
 
+
+
 .activities-title{
+    margin-bottom: 38px;
+
     font-size: 48px;
     font-weight: 400;
     line-height: 1.17;
@@ -142,6 +211,8 @@ a{
 }
 
 .activity-list {
+    padding: 314px 40px 40px 40px;
+
     color: rgba(217, 217, 217, 1);
     background-color: var(--black-theme-color);
     font-size: 18px;
@@ -149,12 +220,26 @@ a{
 }
 
 .activity{
+    margin-bottom: 26px;
+
     color: var(--white-theme-color);
     font-size: 36px;
     font-weight: 400;
 }
 
+.activity-description{
+    margin-bottom: 16px;
+}
+
+.activity-description-list{
+    margin-bottom: 26px;
+}
+
 .activity-link{
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+
     color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-weight: 500;
@@ -166,10 +251,14 @@ a{
 /* Our services */
 
 .services{
+    padding: 120px 0;
+
     background-color: rgba(247, 247, 247, 1);
 }
 
 .services-title{
+    margin-bottom: 48px;
+
     font-size: 48px;
     font-weight: 400;
     line-height: 1.17;
@@ -186,14 +275,32 @@ a{
     line-height: 1.17;
 }
 
+.service-item{
+    padding: 46px;
+}
+
 .service{
+    margin: 26px 0;
+
     color: rgba(0, 0, 0, 1);
     font-size: 36px;
     font-weight: 400;
     line-height: 1.17;
 }
 
+.service-description-list{
+    margin-bottom: 26px;
+}
+
+.service-description-list-item:not(:last-child){
+    margin-bottom: 12px;
+}
+
 .service-link {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+
     background-color: rgba(0, 0, 0, 1);
     color: var(--white-theme-color);
     font-size: 16px;
@@ -223,7 +330,15 @@ a{
     text-transform: uppercase;
 }
 
+/* News */
+
+.news{
+    padding: 120px 0;
+}
+
 .news-title{
+    margin-bottom: 48px;
+
     font-size: 48px;
     font-weight: 400;
     line-height: 1.17;
@@ -234,20 +349,32 @@ a{
     text-transform: uppercase;
 }
 
-.news-headline{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.17;
+.news-figure {
+    margin-bottom: 22px;
 }
 
-.news-sign{
+.news-poster {
+    margin-bottom: 20px;
+}
+
+.news-sign {
     color: rgba(76, 76, 76, 1);
     font-size: 12px;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
+.news-headline{
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
 .news-preview{
+    margin-bottom: 16px;
+
     color: rgba(76, 76, 76, 1);
     font-size: 14px;
     line-height: 1.14;
@@ -263,15 +390,29 @@ a{
 
 /* Join us */
 .join-section{
+    padding: 120px 0;
+
     background-color: var(--black-theme-color);
 }
 
+.container-centered{
+    padding: 0 82px;
+    margin: 0 auto;
+    max-width: 708px;
+    text-align: center;
+}
+
 .join-title{
+    margin-bottom: 26px;
+
     color: var(--white-theme-color);
     font-size: 48px;
     font-weight: 400;
     line-height: 1.17;
-    text-align: center;
+}
+
+.join-title .title-accent{
+    display: inline;
 }
 
 .join-title .title-accent::first-letter{
@@ -279,14 +420,20 @@ a{
 }
 
 .join-call{
+    display: inline-block;
+    margin-bottom: 46px;
+
     color: rgba(217, 217, 217, 1);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.17;
-    text-align: center;
 }
 
 .join-button{
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+
     background-color: var(--white-theme-color);
     font-size: 16px;
     font-weight: 500;
@@ -297,6 +444,8 @@ a{
 /* Footer */
 
 .footer{
+    padding-top: 68px;
+
     background-color: var(--black-theme-color);
 }
 
@@ -308,6 +457,10 @@ a{
     text-transform: uppercase;
 }
 
+.footer-list-item:not(:last-child){
+    margin-bottom: 28px;
+}
+
 .adress-list{
     color: rgba(217, 217, 217, 1);
     font-size: 16px;
@@ -316,6 +469,9 @@ a{
 }
 
 .copyrights{
+    padding: 24px 0;
+    margin-top: 68px;
+
     color: rgba(217, 217, 217, 1);
     font-size: 14px;
     line-height: 1.2;
