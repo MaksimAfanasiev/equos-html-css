@@ -42,7 +42,7 @@ h1, h2, h3, p{
 }
 
 .container{
-    max-width: 1250px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -61,15 +61,37 @@ h1, h2, h3, p{
 
 /* Header */
 
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
 .nav-list{
+    display: flex;
+    margin-left: 175px;
+
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
+.nav-item{
+    min-width: fit-content;
+}
+
+.nav-link{
+    padding: 40px 0;
+    display: inline-block;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 26px;
+}
+
 .nav-button{
     display: inline-block;
+    margin-left: auto;
     padding: 14px 32px;
     min-width: 175px;
     border-radius: 4px;
@@ -91,13 +113,9 @@ h1, h2, h3, p{
     background-color: var(--black-theme-color);
 }
 
-/* .hero > .container{
-    max-width: 560px;
-} */
-
 .hero-title{
     margin-bottom: 26px;
-    /* max-width: 560px; */
+    max-width: 560px;
 
     color: var(--white-theme-color);
     font-size: 64px;
@@ -110,7 +128,7 @@ h1, h2, h3, p{
 .hero-text{
     margin-bottom: 46px;
     padding-right: 15px;
-    /* max-width: 545px; */
+    max-width: 560px;
 
     color: rgba(217, 217, 217, 1);
     font-size: 18px;
@@ -135,6 +153,10 @@ h1, h2, h3, p{
 
 .features{
     margin-bottom: 143px;
+}
+
+.features > .container{
+    display: flex;
 }
 
 .features-title{
@@ -163,6 +185,11 @@ h1, h2, h3, p{
 
 .text-box{
     max-width: 500px;
+    margin-right: 133px;
+}
+
+.list-box{
+    padding: 28px 14px;
 }
 
 .feature-item:not(:last-child){
@@ -199,8 +226,6 @@ h1, h2, h3, p{
 
 /* Fields of activity */
 
-
-
 .activities-title{
     margin-bottom: 38px;
 
@@ -211,13 +236,23 @@ h1, h2, h3, p{
 }
 
 .activity-list {
-    padding: 314px 40px 40px 40px;
+    display: flex;
+    align-items: end;
 
     color: rgba(217, 217, 217, 1);
     background-color: var(--black-theme-color);
     font-size: 18px;
     line-height: 1.17;
 }
+
+.activity-item{
+    min-width: 500px;
+    padding: 40px;
+}
+
+/* .activity-item:not(:last-child){
+    margin-right: 40px;
+} */
 
 .activity{
     margin-bottom: 26px;
@@ -270,13 +305,28 @@ h1, h2, h3, p{
 }
 
 .service-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -28px;
+
     color: rgba(76, 76, 76, 1);
     font-size: 18px;
     line-height: 1.17;
 }
 
 .service-item{
-    padding: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    width: calc((100% - 28px) / 2);
+    margin-bottom: 28px;
+    padding: 46px 0 46px 46px;
+}
+
+.service-item:nth-child(2n+1){
+    margin-right: 28px;
 }
 
 .service{
@@ -347,6 +397,14 @@ h1, h2, h3, p{
 
 .news-title .title-accent::first-letter{
     text-transform: uppercase;
+}
+
+.news-list{
+    display: flex;
+}
+
+.news-item:not(:last-child){
+    margin-right: 28px;
 }
 
 .news-figure {
@@ -449,7 +507,28 @@ h1, h2, h3, p{
     background-color: var(--black-theme-color);
 }
 
+.footer > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-link-item{
+    margin-right: 18px;
+}
+
+.footer-nav{
+    display: flex;
+}
+
 .footer-nav-list{
+    margin-right: 188px;
+
     color: rgba(217, 217, 217, 1);
     font-size: 16px;
     font-weight: 500;
@@ -459,6 +538,11 @@ h1, h2, h3, p{
 
 .footer-list-item:not(:last-child){
     margin-bottom: 28px;
+}
+
+.social-link-list{
+    display: flex;
+
 }
 
 .adress-list{
