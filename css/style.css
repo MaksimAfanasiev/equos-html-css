@@ -41,6 +41,10 @@ h1, h2, h3, p{
     margin: 0;
 }
 
+img{
+    display: block;
+}
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -111,6 +115,8 @@ h1, h2, h3, p{
     margin-bottom: 143px;
 
     background-color: var(--black-theme-color);
+    background-image: url(../images/hero1.jpg);
+    background-size: cover;
 }
 
 .hero-title{
@@ -190,6 +196,11 @@ h1, h2, h3, p{
 
 .list-box{
     padding: 28px 14px;
+    flex-grow: 1;
+
+    background-image: url(../images/whyus.webp);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .feature-item:not(:last-child){
@@ -226,6 +237,12 @@ h1, h2, h3, p{
 
 /* Fields of activity */
 
+.activities{
+    /* background-image: url(../images/trucks1.webp);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
 .activities-title{
     margin-bottom: 38px;
 
@@ -238,21 +255,31 @@ h1, h2, h3, p{
 .activity-list {
     display: flex;
     align-items: end;
+    justify-content: space-between;
+    padding: 314px 40px 40px 40px;
 
     color: rgba(217, 217, 217, 1);
-    background-color: var(--black-theme-color);
+    
     font-size: 18px;
     line-height: 1.17;
+
+    background-image: linear-gradient(180.00deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../images/trucks1.webp);
+    background-color: var(--black-theme-color);
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activity-item{
     min-width: 500px;
-    padding: 40px;
+    padding: 0;
 }
 
-/* .activity-item:not(:last-child){
-    margin-right: 40px;
-} */
+.activity-item:not(:first-child){
+    padding-bottom: 34px;
+    padding-left: 40px;
+    border-left: solid rgba(255, 255, 255, 0.25);
+}
 
 .activity{
     margin-bottom: 26px;
@@ -362,6 +389,8 @@ h1, h2, h3, p{
 .service-item.black{
     background-color: var(--black-theme-color);
     color: rgba(217, 217, 217, 1);
+
+    background-image: url(../images/service-black1.webp);
 }
 
 .service.black{
@@ -451,6 +480,10 @@ h1, h2, h3, p{
     padding: 120px 0;
 
     background-color: var(--black-theme-color);
+
+    background-image: url(../images/schedule1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container-centered{
