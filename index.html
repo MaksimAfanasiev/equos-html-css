@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
@@ -14,11 +14,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- <div class="example">
-        <svg class="example-icon">
-            <use href="./images/symbol-defs.svg#icon-com-loans"></use>
-        </svg>
-    </div> -->
+
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="main-nav">
@@ -107,7 +104,7 @@
                 <h2 class="services-title">Our Tailored <span class="title-accent">Services</span></h2>
                 <ul class="service-list">
                     <li class="service-item">
-                        <img src="./images/svg/com-loans.svg" alt="" width="64px" height="64px">
+                        <img src="./images/svg/com-loans.svg" alt="" width="64" height="64">
                         <h3 class="service">Commercial loans</h3>
                         <ul class="service-description-list">
                             <li class="service-description-list-item">Get up to 100% financing to cover project costs</li>
@@ -117,7 +114,7 @@
                         <a href="" class="service-link">apply now</a>
                     </li>
                     <li class="service-item black">
-                        <img src="./images/svg/bus-loans.svg" alt="" width="64px"  height="64px">
+                        <img src="./images/svg/bus-loans.svg" alt="" width="64"  height="64">
                         <h3 class="service black">Business loans</h3>
                         <ul class="service-description-list">
                             <li class="service-description-list-item">Get up to $5M in business loan</li>
@@ -128,7 +125,7 @@
                         <a href="" class="service-link black">apply now</a>
                     </li>
                     <li class="service-item">
-                        <img src="./images/svg/credit.svg" alt="" width="64px" height="64px">
+                        <img src="./images/svg/credit.svg" alt="" width="64" height="64">
                         <h3 class="service">Line of credit</h3>
                         <ul class="service-description-list">
                             <li class="service-description-list-item">Qualify for the max credit line</li>
@@ -139,7 +136,7 @@
                         <a href="" class="service-link">apply now</a>
                     </li>
                     <li class="service-item">
-                        <img src="./images/svg/equip.svg" alt="" width="64px" height="64px">
+                        <img src="./images/svg/equip.svg" alt="" width="64" height="64">
                         <h3 class="service">Equipment financing and leasing</h3>
                         <ul class="service-description-list">
                             <li class="service-description-list-item">Borrow up to 100% value of equipment</li>
@@ -153,35 +150,55 @@
             </div>
          </section>
 
-        <!-- Feedback stories (i will murkup it later) -->
-        <!-- <section class="stories">
-            <h2 class="stories-title">Read our <span class="title-accent">Client's Stories</span></h2>
-            <ul>
-                <li>
-                    <article>
-                        <p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
-                        <footer>
-                            <p>Brooklyn Simmons</p>
-                            <p>company name</p>
-                        </footer>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
-                        <footer>
-                            <p>Brooklyn Simmons</p>
-                            <p>company name</p>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <button><img src="./images/less.svg" alt=""></button>
-            <button><img src="./images/more.svg" alt=""></button>
-        </section> -->
+        <!-- Feedback stories -->
+        <section class="stories">
+            <div class="container">
+                <h2 class="stories-title">Read our <span class="title-accent">Client's Stories</span></h2>
+                <ul class="stories-list">
+                    <li class="story-item">
+                        <a href="" class="story-link">
+                            <div class="story">
+                                <p class="story-text">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                    Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+                                <footer class="story-sign">
+                                    <p class="story-author">Brooklyn Simmons</p>
+                                    <p class="author-company">company name</p>
+                                </footer>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="story-item">
+                        <a href="" class="story-link">
+                            <div class="story">
+                                <p class="story-text">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.
+                                    Excepteur
+                                    sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+                                <footer class="story-sign">
+                                    <p class="story-author">Brooklyn Simmons</p>
+                                    <p class="author-company">company name</p>
+                                </footer>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="slider-nav">
+                    <button class="slider-button">
+                        <svg class="slider-button-icon">
+                            <use href="./images/symbol-defs.svg#icon-back"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-button">
+                        <svg class="slider-button-icon">
+                            <use href="./images/symbol-defs.svg#icon-forward"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <!-- News -->
          <section class="news">
@@ -225,72 +242,72 @@
         <!-- Join us -->
          <section class="join-section">
             <div class="container-centered">
-                <h2>Join us</h2> <!--hidden headlight !-->
+                <h2 class="visually-hidden">Join us</h2> <!--hidden headlight !-->
                 <a href="./" ><img src="./images/logo-footer1.webp" alt="company logo" class="footer-logo"></a>
                 <h3 class="join-title">Action Now: <span class="title-accent">Propel Your Journey to Success</span></h3>
                 <b class="join-call">Seize the moment. Click now to propel your journey and unlock the door to success.</b>
                 <a href="" class="join-button">schedule consultation</a>
             </div>
          </section>
-        
-        <!-- Footer -->
-         <footer class="footer">
-            <div class="container">
-                <div class="footer-side">
-                    <a href="./"><img src="./images/logo-footer1.webp" alt="company logo"></a>
-                    <ul class="social-link-list">
-                        <li class="social-link-item">
-                            <a href="">
-                                <svg class="link-item">
-                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a></li>
-                        <li class="social-link-item">
-                            <a href="">
-                                <svg class="link-item">
-                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li class="footer-list-item"><a href="">Why us</a></li>
-                        <li class="footer-list-item"><a href="">Services</a></li>
-                        <li class="footer-list-item"><a href="">Industries</a></li>
-                        <li class="footer-list-item"><a href="">Resources</a></li>
-                    </ul>
-                    <ul class="footer-nav-list">
-                        <li class="footer-list-item"><a href="">Contact</a></li>
-                        <li class="footer-list-item"><a href="">Privacy policy</a></li>
-                        <li class="footer-list-item"><a href="">terms of use</a></li>
-                    </ul>
-                    <ul class="adress-list">
-                        <li class="footer-list-item">
-                            <svg class="adress-icon">
-                                <use href="./images/symbol-defs.svg#icon-phone"></use>
-                            </svg>
-                            <a href="tel:+38085550111">(808) 555-0111</a></li>
-                        <li class="footer-list-item">
-                            <svg class="adress-icon">
-                                <use href="./images/symbol-defs.svg#icon-mail"></use>
-                            </svg>
-                            <a href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
-                        <li class="footer-list-item">
-                            <svg class="adress-icon">
-                                <use href="./images/symbol-defs.svg#icon-map-mark"></use>
-                            </svg>
-                            <a href="https://www.google.com/maps">2715 Ash Dr. San Jose, South Dakota 83475</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <p class="copyrights">&copy; 2024 All Rights Reserved.</p>
-         </footer>
     </main>
-    <footer>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-side">
+                <a href="./"><img src="./images/logo-footer1.webp" alt="company logo"></a>
+                <ul class="social-link-list">
+                    <li class="social-link-item">
+                        <a href="">
+                            <svg class="link-item">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-link-item">
+                        <a href="">
+                            <svg class="link-item">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-list-item"><a href="">Why us</a></li>
+                    <li class="footer-list-item"><a href="">Services</a></li>
+                    <li class="footer-list-item"><a href="">Industries</a></li>
+                    <li class="footer-list-item"><a href="">Resources</a></li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <li class="footer-list-item"><a href="">Contact</a></li>
+                    <li class="footer-list-item"><a href="">Privacy policy</a></li>
+                    <li class="footer-list-item"><a href="">terms of use</a></li>
+                </ul>
+                <ul class="adress-list">
+                    <li class="footer-list-item">
+                        <svg class="adress-icon">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        <a href="tel:+38085550111">(808) 555-0111</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <svg class="adress-icon">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        <a href="mailto:willie.jennings@example.com">willie.jennings@example.com</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <svg class="adress-icon">
+                            <use href="./images/symbol-defs.svg#icon-map-mark"></use>
+                        </svg>
+                        <a href="https://www.google.com/maps">2715 Ash Dr. San Jose, South Dakota 83475</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyrights">&copy; 2024 All Rights Reserved.</p>
     </footer>
 </body>
 </html>

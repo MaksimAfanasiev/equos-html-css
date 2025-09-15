@@ -26,9 +26,6 @@ secondary black: rgba(76, 76, 76, 1)
    
 } */
 
-
-
-
 :root {
     --white-theme-color: rgba(255, 255, 255, 1);
     --black-theme-color: rgba(30, 30, 30, 1);
@@ -63,6 +60,20 @@ h1, h2, h3, p{
 
 img{
     display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container{
@@ -270,12 +281,6 @@ img{
 
 /* Fields of activity */
 
-.activities{
-    /* background-image: url(../images/trucks1.webp);
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-
 .activities-title{
     margin-bottom: 38px;
 
@@ -287,9 +292,8 @@ img{
 
 .activity-list {
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    padding: 314px 40px 40px 40px;
+    /* align-items: end; */
+    /* padding: 40px; */
 
     color: rgba(217, 217, 217, 1);
     
@@ -304,26 +308,38 @@ img{
 }
 
 .activity-item{
-    padding-right: 40px;
+    position: relative;
+    padding: 280px 40px 40px 40px;
     max-width: 533px;
 }
 
 .activity-item:not(:first-child){
-    flex-grow: 1;
-    padding-bottom: 34px;
-    padding-left: 40px;
-    border-left: solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: end;
+    padding-bottom: 100px;
+    margin-right: auto;
+}
+
+.activity-item:not(:first-child)::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    margin-right: 40px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .activity{
-    margin-bottom: 26px;
-
     color: var(--white-theme-color);
     font-size: 36px;
     font-weight: 400;
 }
 
 .activity-description{
+    margin-top: 26px;
     margin-bottom: 16px;
 }
 
@@ -479,6 +495,123 @@ img{
     font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
+}
+
+/* Stories */
+
+.stories{
+    padding: 120px 0 120px 0;
+    background-color: var(--black-theme-color);
+
+    color: var(--white-theme-color);
+}
+
+.stories-title{
+    text-align: center;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+
+    margin-bottom: 60px;
+}
+
+.stories-list{
+    display: flex;
+
+    color: rgba(217, 217, 217, 0.2);
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+.story-item{
+    position: relative;
+}
+
+.story-item::before,
+.story-item::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.story-item::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.story-item::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.story-item:not(:last-child){
+    margin-right: 26px;
+}
+
+.story-item:hover{
+    color: rgba(217, 217, 217, 1);
+    cursor: pointer;
+}
+
+.story-item:hover::after,
+.story-item:hover::before{
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.story{
+    padding: 27px 13px;
+}
+
+.story-text{
+    margin-bottom: 28px;
+}
+
+.story-author{
+    font-size: 18px;
+    line-height: 1.17;
+
+    margin-bottom: 10px;
+}
+
+.author-company{
+    font-size: 12px;
+    line-height: 1.17;
+    text-transform: uppercase;
+}
+
+.slider-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 47px;
+}
+
+.slider-button{
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: inherit;
+}
+
+.slider-button:hover .slider-button-icon{
+    fill: rgba(217, 217, 217, 1);
+    cursor: pointer;
+}
+
+.slider-button:not(:last-child){
+    margin-right: 28px;
+}
+
+.slider-button-icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: rgba(217, 217, 217, 0.2);
 }
 
 /* News */
@@ -708,6 +841,8 @@ img{
 }
 
 .copyrights{
+    position: relative;
+
     padding: 24px 0;
     margin-top: 68px;
 
@@ -715,6 +850,16 @@ img{
     font-size: 14px;
     line-height: 1.2;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.copyrights::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
