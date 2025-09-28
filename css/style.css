@@ -1142,3 +1142,175 @@ img{
     color: var(--white-theme-color);
     font-weight: 500;
 }
+
+/* Contact Page */
+
+.contact-hero{
+    padding: 160px 0 267px 0;
+    background-color: var(--black-theme-color);
+    color: var(--white-theme-color);
+}
+
+.contact-title{
+    margin-bottom: 26px;
+
+    font-size: 64px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.contact-text{
+    max-width: 545px;
+    margin: 0 auto;
+
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.form{
+    position: relative;
+
+    padding: 363px 0 0 0;
+}
+
+.contact-form{
+    position: absolute;
+    top: -203px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1062px;
+    padding: 58px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -36px;
+    
+}
+
+.label{
+    margin-right: 36px;
+    margin-bottom: 48px;
+    flex-basis: calc(100% / 2 - 36px);
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px 2px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.user-massage{
+    flex-grow: 1;
+}
+
+.user-text{
+    resize: none;
+    min-height: 80px;
+}
+
+.form-button{
+    display: block;
+    background-color: black;
+    border-radius: 4px;
+    border: 0;
+    padding: 14px 32px;
+    cursor: pointer;
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-transform: uppercase;
+}
+
+.form-button:active{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: inset 2px 2px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Contacts */
+
+.contacts{
+    padding: 120px 0;
+}
+
+.contacts-content{
+    position: relative;
+    display: flex;
+}
+
+.contact-information{
+    position: absolute;
+    top: 47px;
+
+    background-color: var(--black-theme-color);
+    padding: 58px 105px 48px 58px;
+    max-width: 408px;
+    border-radius: 8px;
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    line-height: 1.18;
+}
+
+.contact-information b{
+    display: block;
+    margin-bottom: 48px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.contact-item:not(:last-child){
+    margin-bottom: 48px;
+}
+
+.contact-unit{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 26px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.18;
+}
+
+.contact-data{
+    margin-bottom: 10px;
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+}
+
+.contact-list-icon{
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.map{
+    margin-left: 218px;
+    width: 100%;
+}
