@@ -193,6 +193,8 @@ img{
 
 .features > .container{
     display: flex;
+    align-items: stretch;
+
 }
 
 .features-title{
@@ -222,15 +224,20 @@ img{
 .text-box{
     max-width: 500px;
     margin-right: 133px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .list-box{
     padding: 28px 14px;
     flex-grow: 1;
+    display: flex;
+    align-items: center;
 
     background-image: url(../images/whyus.webp);
     background-repeat: no-repeat;
     background-position: right;
+    background-size:auto;
 }
 
 .feature-item:not(:last-child) {
@@ -1085,7 +1092,10 @@ img{
 
 .whyus-hero{
     background-color: var(--black-theme-color);
-    padding: 160px 0;
+    background-image: url(../images/whyus-hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 162px 0;
     margin-bottom: 143px;
 }
 
@@ -1095,6 +1105,15 @@ img{
     max-width: 100%;
 }
 
+.whyus-feauters{
+    margin-bottom: 16px;
+}
+
+.whyus-list{
+    background-image: url(../images/whyus-page-section1.webp);
+}
+
+
 /* Resourses page */
 
 /* Resourses Hero */
@@ -1102,6 +1121,10 @@ img{
 .res-hero{
     padding: 160px 0;
     background-color: var(--black-theme-color);
+
+    background-image: url(../images/res-hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .res-hero .hero-title{
@@ -1308,6 +1331,7 @@ img{
     width: 32px;
     height: 32px;
     margin-right: 16px;
+    fill: currentColor;
 }
 
 .map{
