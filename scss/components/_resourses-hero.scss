@@ -1,0 +1,12 @@
+.res-hero {
+    padding: 160px 0;
+    background-color: var(--black-theme-color);
+
+    background-image: url(../../images/res-hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.res-hero .hero-title {
+    font-weight: 700;
+}

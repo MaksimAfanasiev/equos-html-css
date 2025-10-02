@@ -1,0 +1,45 @@
+/* Hero */
+
+.hero {
+    padding: 150px 0;
+    margin-bottom: 143px;
+
+    background-color: var(--black-theme-color);
+    background-image: url(../../images/hero1.jpg);
+    background-size: cover;
+}
+
+.hero-title {
+    margin-bottom: 26px;
+    max-width: 560px;
+
+    color: var(--white-theme-color);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.18;
+    text-transform: capitalize;
+}
+
+.hero-text {
+    margin-bottom: 46px;
+    padding-right: 15px;
+    max-width: 560px;
+
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.17;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 32px;
+    min-width: 275px;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: var(--white-theme-color);
+}

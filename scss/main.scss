@@ -1,0 +1,25 @@
+@use './base/common';
+@use './components/header';
+@use './components/main-hero';
+@use './components/why-us';
+@use './components/our-activities';
+@use './components/our-services';
+@use './components/client-stories';
+@use './components/news';
+@use './components/join-us';
+@use './components/footer';
+@use './components/services-hero';
+@use './components/industries-hero';
+@use './components/industry-description';
+@use './components/industry-benefits';
+@use './components/why-us-page';
+@use './components/resourses-hero';
+@use './components/resourses-set';
+@use './components/contact-hero';
+@use './components/form';
+@use './components/contacts';
+
+:root {
+    --white-theme-color: rgba(255, 255, 255, 1);
+    --black-theme-color: rgba(30, 30, 30, 1);
+}

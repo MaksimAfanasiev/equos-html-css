@@ -1,0 +1,63 @@
+/* Join us */
+.join-section {
+    padding: 120px 0;
+
+    background-color: var(--black-theme-color);
+
+    background-image: url(../../images/schedule1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-centered {
+    padding: 0 82px;
+    margin: 0 auto;
+    max-width: 708px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+}
+
+.join-title {
+    margin-bottom: 26px;
+
+    color: var(--white-theme-color);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.join-title .title-accent {
+    display: inline;
+}
+
+.join-title .title-accent::first-letter {
+    text-transform: uppercase;
+}
+
+.join-call {
+    display: inline-block;
+    margin-bottom: 46px;
+
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+
+    background-color: var(--white-theme-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}

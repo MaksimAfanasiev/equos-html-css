@@ -1,0 +1,76 @@
+.industry {
+    padding: 120px 0;
+}
+
+.industry-descr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.descr-text {
+    margin-right: 110px;
+    margin-bottom: -16px;
+}
+
+.ind-title {
+    margin-bottom: 28px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.ind-title>.title-accent::first-letter {
+    text-transform: uppercase;
+}
+
+.options-text {
+    margin-bottom: 28px;
+
+    color: rgba(76, 76, 76, 1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.options-list {
+    margin-bottom: 28px;
+
+    color: rgba(76, 76, 76, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+}
+
+.option-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.option-item:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../images/svg/gray-mark.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+}
+
+.ind-text {
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+}
+
+// IT
+.it-industry {
+    background-color: rgba(247, 247, 247, 1);
+}

@@ -1,0 +1,119 @@
+/* Our services */
+
+.services {
+    padding: 120px 0;
+
+    background-color: rgba(247, 247, 247, 1);
+}
+
+.services-title {
+    margin-bottom: 48px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.services-title>.title-accent::first-letter {
+    text-transform: uppercase;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -28px;
+
+    color: rgba(76, 76, 76, 1);
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    width: calc((100% - 28px) / 2);
+    margin-bottom: 28px;
+    padding: 46px 0 46px 46px;
+}
+
+.service-item:nth-child(2n+1) {
+    margin-right: 28px;
+}
+
+.service {
+    margin: 26px 0;
+
+    color: rgba(0, 0, 0, 1);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.service-description-list {
+    margin-bottom: 26px;
+    padding-right: 40px;
+}
+
+.service-description-list-item {
+    display: flex;
+
+}
+
+.service-description-list-item::before {
+    display: block;
+    content: "";
+    min-width: 18px;
+    height: 18px;
+    background-image: url(../../images/svg/gray-mark.svg);
+    background-size: cover;
+    margin-right: 12px;
+
+}
+
+.service-description-list-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.service-link {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+
+    background-color: rgba(0, 0, 0, 1);
+    color: var(--white-theme-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.service-item.black {
+    background-color: var(--black-theme-color);
+    color: rgba(217, 217, 217, 1);
+
+    background-image: url(../../images/service-black1.webp);
+}
+
+.service-item.black li::before {
+    background-image: url(../../images/svg/white-mark.svg);
+}
+
+.service.black {
+    color: var(--white-theme-color);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.service-link.black {
+    background-color: var(--white-theme-color);
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}

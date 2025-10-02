@@ -1,0 +1,77 @@
+/* News */
+
+.news {
+    padding: 120px 0;
+}
+
+.news-title {
+    margin-bottom: 48px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.news-title .title-accent::first-letter {
+    text-transform: uppercase;
+}
+
+.news-list {
+    display: flex;
+}
+
+.news-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.news-figure {
+    margin-bottom: 16px;
+    padding-bottom: 5px;
+}
+
+.news-figure::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.news-poster {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+.news-sign {
+    color: rgba(76, 76, 76, 1);
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.news-headline {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.news-preview {
+    margin-bottom: 16px;
+
+    color: rgba(76, 76, 76, 1);
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.news-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}

@@ -1,0 +1,63 @@
+.contacts {
+    padding: 120px 0;
+}
+
+.contacts-content {
+    position: relative;
+    display: flex;
+}
+
+.contact-information {
+    position: absolute;
+    top: 47px;
+
+    background-color: var(--black-theme-color);
+    padding: 58px 105px 48px 58px;
+    max-width: 408px;
+    border-radius: 8px;
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    line-height: 1.18;
+}
+
+.contact-information b {
+    display: block;
+    margin-bottom: 48px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.contact-unit {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 26px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.18;
+}
+
+.contact-data {
+    margin-bottom: 10px;
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+}
+
+.contact-list-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    fill: currentColor;
+}
+
+.map {
+    margin-left: 218px;
+    width: 100%;
+}

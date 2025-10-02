@@ -1,0 +1,99 @@
+/* Why us */
+
+.features {
+    margin-bottom: 143px;
+}
+
+.features>.container {
+    display: flex;
+    align-items: stretch;
+
+}
+
+.features-title {
+    margin-bottom: 28px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.features-definition {
+    margin-bottom: 16px;
+
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.features-description {
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+}
+
+.text-box {
+    max-width: 500px;
+    margin-right: 133px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.list-box {
+    padding: 28px 14px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    background-image: url(../../images/whyus.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+.feature-item:not(:last-child) {
+    margin-bottom: 56px;
+}
+
+.feature-title {
+    display: flex;
+}
+
+.feature-title::before {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(../../images/svg/black-mark.svg);
+    margin-right: 8px;
+}
+
+.feature-title {
+    margin-bottom: 20px;
+
+    color: rgba(76, 76, 76, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.feture-indicator {
+    margin-bottom: 12px;
+
+    font-size: 48px;
+    line-height: 1.17;
+}
+
+.money-indicator {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.indicator-description {
+    color: rgba(76, 76, 76, 1);
+    font-size: 16px;
+    line-height: 1.19;
+}

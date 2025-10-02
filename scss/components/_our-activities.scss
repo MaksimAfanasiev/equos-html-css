@@ -1,0 +1,94 @@
+/* Fields of activity */
+
+.activities-title {
+    margin-bottom: 38px;
+
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.activity-list {
+    display: flex;
+
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    line-height: 1.17;
+
+    background-image: linear-gradient(180.00deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../../images/trucks1.webp);
+    background-color: var(--black-theme-color);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.activity-item {
+    position: relative;
+    padding: 280px 40px 40px 40px;
+    max-width: 533px;
+}
+
+.activity-item:not(:first-child) {
+    display: flex;
+    align-items: end;
+    padding-bottom: 100px;
+    margin-right: auto;
+}
+
+.activity-item:not(:first-child)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    margin-right: 40px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.activity {
+    color: var(--white-theme-color);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.activity-description {
+    margin-top: 26px;
+    margin-bottom: 16px;
+}
+
+.activity-description-list {
+    margin-bottom: 26px;
+}
+
+.activity-description-list>li {
+    display: flex;
+}
+
+.activity-description-list>li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.activity-description-list>li::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url(../../images/svg/white-mark.svg);
+
+    margin-right: 12px;
+}
+
+.activity-link {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: var(--white-theme-color);
+}

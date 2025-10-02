@@ -1,0 +1,29 @@
+.services-hero {
+    padding-top: 160px;
+    padding-bottom: 250px;
+
+    background-color: var(--black-theme-color);
+}
+
+.services-hero .hero-title {
+    font-weight: 700;
+}
+
+.service-set {
+    display: flex;
+    position: relative;
+    height: 500px;
+    padding: 20px 0;
+}
+
+.set-item-descr {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    display: none;
+}
+
+.set-item:hover .set-item-descr {
+    display: block;
+}
